@@ -1,0 +1,266 @@
+
+.hero-logo {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  text-align: center;
+  padding: 70px 0;
+}
+.hero-logo .wrapper {
+    position: relative;
+    height: 100%;
+}
+.hero-effect {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    z-index: 1;
+    pointer-events: none;
+}
+.hero-action {
+    position: absolute;
+    bottom: -60px;
+    left: 0;
+    width: 100%;
+    text-align: center;
+}
+a {
+    text-decoration: none;
+    transition: all .25s ease-in-out;
+}
+@keyframes moving {
+    from {top: 0px;}
+    to {top: 20px;}
+}
+@-webkit-keyframes moving {
+       from {top: 0px;}
+    to {top: 20px;}
+}
+.enter-button {
+    margin-top: 50px;
+    color: white;
+    display: block;
+    font-size: 12px;
+    font-style: italic;
+    line-height: 20px;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+    -webkit-animation: moving 2s ease-in-out 0s infinite;
+    -moz-animation: moving 2s ease-in-out 0s infinite;
+    -o-animation: moving 2s ease-in-out 0s infinite;
+    animation: moving 2s ease-in-out 0s infinite;
+    position: relative;
+}
+
+.enter-button .fa {
+    display: block;
+    margin-top: 5px;
+    font-size: 20px;
+    font-style: normal;
+}
+
+
+@media screen and (max-width: 1023px)
+.wrapper {
+    width: 760px;
+}
+
+@media screen and (min-width: 768px){
+  .navbar .navbar-nav {
+        display: inline-block;
+        float: none;
+        vertical-align: top;
+    }
+    .navbar .navbar-collapse {
+        text-align: center;
+    }
+}
+/* Style the navbar */
+#navigation-bar {
+  overflow: hidden;
+  background-color: #3333;
+}
+/* Navbar items */
+.header-floating,#primary-menu a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px;
+  text-decoration: none;
+}
+.content {
+  padding: 16px;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .content {
+  padding-top: 60px;
+}
+/*---------------Header navigation---------------*/
+.header-anchor {
+    height: 71px;
+}
+@media screen and (max-width: 1023px)
+.ribbon-menu+.header-navigation {
+    padding-right: 70px;
+}
+
+.header-navigation {
+    display: block;
+    padding: 0 70px;
+    clear: both;
+    text-align: center;
+}
+.content {
+    position: relative;
+    text-align: center;
+    vertical-align: middle;
+}
+.wrapper{
+  display: inline-block;
+}
+.wrapper-center{
+  margin: auto;
+}
+div {
+  display: block;
+  box-shadow: none;
+  border-color: white;
+  border: hidden;
+}
+
+.circle {
+  display: inline-block;
+  left: 50%;
+  margin: auto;
+}
+#pic-container{
+  margin: auto;
+  display: inline-block;
+  text-align: center;
+  padding-top: 30px;
+}
+/*------------Top Header----------------*/
+.content a img {
+  margin-top: 100px; 
+  height: 100px; 
+  max-width: 100%;
+}
+.home-header:before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    pointer-events: none;
+
+   /* set background-image in all browsers*/
+    background-image: -webkit-linear-gradient(left, rgba(49,61,65,0.6), rgba(49,61,65,0.6));
+    background-image: -moz-linear-gradient(left, rgba(49,61,65,0.6), rgba(49,61,65,0.6));
+    background-image: -o-linear-gradient(left, rgba(49,61,65,0.6), rgba(49,61,65,0.6));
+    background-image: -ms-linear-gradient(left, rgba(49,61,65,0.6), rgba(49,61,65,0.6));
+    background-image: linear-gradient(90deg, rgba(49,61,65,0.6), rgba(49,61,65,0.6));
+}
+.home-header {
+    background-image: url(/pictures/home/logo.jpg);
+    position: relative;
+}
+#fullscreen-header {
+    height: 100vh;
+    position: relative;
+    text-align: center;
+    width: 100%;
+    min-height: 350px;
+    background-color: #2A3A3F;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    padding: 30px;
+}
+#fullscreen-header:before, #fullscreen-header:after{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+
+.header-container {
+    display: table;
+    margin: 0 auto;
+    padding: 0 20px;
+    height: 100%;
+}
+.header-content {
+    display: table-cell;
+    position: relative;
+    z-index: 10;
+    text-align: center;
+    vertical-align: middle;
+}
+.cd-intro span{
+    color: #fff;
+}
+
+/*------------Heading Section -------------*/
+
+element.style {
+    color: #dcc8b4;
+}
+.section-heading{
+  font-family: "Alext Brush";
+  font-size: 400%;
+}
+.subsection-heading{
+  font-family: "Arial";
+  font-size: 100%;
+}
+#clock-div{
+  font-family: sans-serif;
+  color: #fff;
+  display: inline-block;
+  font-weight: 100;
+  text-align: center;
+  font-size: 30px;
+  margin: 0 auto;
+  width: 720px;
+
+}
+
+#clock-div > div{
+  padding: 10px;
+  border-radius: 3px;
+  background: #00BF96;
+  display: inline-block;
+}
+#clock-div{
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #00BF96;
+  display: inline-block;
+}
+#clock-div div > span{
+  padding: 15px;
+  border-radius: 3px;
+  background: #00816A;
+  display: inline-block;
+}
+
+#time-text{
+  padding-top: 5px;
+  font-size: 16px;
+}

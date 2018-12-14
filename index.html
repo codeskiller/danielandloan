@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+	<title>Daniel And Loan</title>
+	<!--main css--> 
+	<link rel="shortcut-icon" type="image/png" href="/pictures/home/heart.png">
+	<link rel="stylesheet" href="/css/style.css">
+	<link rel="stylesheet" type="text/css" media="screen and (max-device-width: 480px)" href="/css/mobile.css" />
+
+	<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700' rel='stylesheet' type='text/css'>
+	<!--icons css-->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.0/css/all.css" integrity="sha384-aOkxzJ5uQz7WBObEZcHvV5JvRW3TUc2rNPA7pe3AwnsUohiw1Vj2Rgx2KSOkF5+h" crossorigin="anonymous">
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="bootstrap-3.3.7-dist2/css/bootstrap.min.css">
+	<link type="text/css" rel="stylesheet" media="screen" href="/css/jquery-sakura.min.css" />
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script src="/bootstrap-3.3.7-dist2/js/bootstrap.min.js"></script>
+	<!--Angularjs library-->
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.2/angular.min.js" ></script>
+</head>
+<body>
+
+<!--sakura effect-->
+	<div id="hero-effect" class="hero-effect" data-jackrose-effect="petal" style="overflow-x: hidden;"><div class="sakura hero-effect-item petal" style="animation: fall 9.487s linear 0s 1 normal none running, blow-soft-left 21s linear 0s infinite normal none running, sway-6 3s linear 0s infinite normal none running; border-radius: 21px 2px; height: 10px; left: 408.368px; margin-top: -31px; width: 9px;"></div><div class="sakura hero-effect-item petal" style="animation: fall 7.487s linear 0s 1 normal none running, blow-medium-right 12s linear 0s infinite normal none running, sway-7 3s linear 0s infinite normal none running; border-radius: 21px 2px; height: 13px; left: 201.618px; margin-top: -28px; width: 12px;"></div><div class="sakura hero-effect-item petal" style="animation: fall 6.487s linear 0s 1 normal none running, blow-soft-left 25s linear 0s infinite normal none running, sway-0 2s linear 0s infinite normal none running; border-radius: 21px 1px; height: 13px; left: 196.391px; margin-top: -30px; width: 12px;"></div><div class="sakura hero-effect-item petal" style="animation: fall 9.487s linear 0s 1 normal none running, blow-medium-left 19s linear 0s infinite normal none running, sway-6 3s linear 0s infinite normal none running; border-radius: 17px 1px; height: 9px; left: 546.708px; margin-top: -16px; width: 9px;"></div><div class="sakura hero-effect-item petal" style="animation: fall 6.487s linear 0s 1 normal none running, blow-medium-left 24s linear 0s infinite normal none running, sway-7 3s linear 0s infinite normal none running; border-radius: 15px 1px; height: 14px; left: 681.129px; margin-top: -23px; width: 14px;"></div><div class="sakura hero-effect-item petal" style="animation: fall 7.487s linear 0s 1 normal none running, blow-soft-right 16s linear 0s infinite normal none running, sway-3 4s linear 0s infinite normal none running; border-radius: 22px 1px; height: 11px; left: 223.941px; margin-top: -18px; width: 10px;"></div><div class="sakura hero-effect-item petal" style="animation: fall 8.487s linear 0s 1 normal none running, blow-soft-left 13s linear 0s infinite normal none running, sway-1 2s linear 0s infinite normal none running; border-radius: 21px 1px; height: 11px; left: 540.9px; margin-top: -17px; width: 11px;"></div><div class="sakura hero-effect-item petal" style="animation: fall 7.487s linear 0s 1 normal none running, blow-medium-right 13s linear 0s infinite normal none running, sway-5 3s linear 0s infinite normal none running; border-radius: 14px 1px; height: 10px; left: 489.072px; margin-top: -32px; width: 8px;"></div><div class="sakura hero-effect-item petal" style="animation: fall 6.487s linear 0s 1 normal none running, blow-medium-left 11s linear 0s infinite normal none running, sway-6 3s linear 0s infinite normal none running; border-radius: 20px 1px; height: 14px; left: 649.551px; margin-top: -27px; width: 12px;"></div><div class="sakura hero-effect-item petal" style="animation: fall 6.487s linear 0s 1 normal none running, blow-soft-right 25s linear 0s infinite normal none running, sway-5 3s linear 0s infinite normal none running; border-radius: 15px 2px; height: 9px; left: 265.369px; margin-top: -32px; width: 8px;"></div><div class="sakura hero-effect-item petal" style="animation: fall 7.487s linear 0s 1 normal none running, blow-soft-right 19s linear 0s infinite normal none running, sway-1 4s linear 0s infinite normal none running; border-radius: 18px 1px; height: 9px; left: 681.536px; margin-top: -28px; width: 7px;"></div><div class="sakura hero-effect-item petal" style="animation: fall 6.487s linear 0s 1 normal none running, blow-soft-right 25s linear 0s infinite normal none running, sway-3 2s linear 0s infinite normal none running; border-radius: 14px 2px; height: 13px; left: 354.96px; margin-top: -29px; width: 12px;"></div><div class="sakura hero-effect-item petal" style="animation: fall 5.487s linear 0s 1 normal none running, blow-medium-right 27s linear 0s infinite normal none running, sway-6 2s linear 0s infinite normal none running; border-radius: 16px 2px; height: 10px; left: 345.765px; margin-top: -24px; width: 8px;"></div><div class="sakura hero-effect-item petal" style="animation: fall 5.487s linear 0s 1 normal none running, blow-soft-left 16s linear 0s infinite normal none running, sway-5 4s linear 0s infinite normal none running; border-radius: 17px 1px; height: 10px; left: 640.944px; margin-top: -25px; width: 8px;"></div><div class="sakura hero-effect-item petal" style="animation: fall 4.487s linear 0s 1 normal none running, blow-medium-left 29s linear 0s infinite normal none running, sway-2 4s linear 0s infinite normal none running; border-radius: 23px 2px; height: 14px; left: 476.049px; margin-top: -18px; width: 14px;"></div><div class="sakura hero-effect-item petal" style="animation: fall 7.487s linear 0s 1 normal none running, blow-soft-left 29s linear 0s infinite normal none running, sway-4 2s linear 0s infinite normal none running; border-radius: 16px 2px; height: 10px; left: -3.8688px; margin-top: -28px; width: 9px;"></div><div class="sakura hero-effect-item petal" style="animation: fall 5.487s linear 0s 1 normal none running, blow-medium-left 23s linear 0s infinite normal none running, sway-1 2s linear 0s infinite normal none running; border-radius: 17px 1px; height: 10px; left: 626.741px; margin-top: -20px; width: 10px;"></div><div class="sakura hero-effect-item petal" style="animation: fall 9.487s linear 0s 1 normal none running, blow-medium-right 20s linear 0s infinite normal none running, sway-8 3s linear 0s infinite normal none running; border-radius: 15px 2px; height: 12px; left: 157.694px; margin-top: -32px; width: 12px;"></div></div> 
+	<div id="fullscreen-header" class="home-header" >
+		<div class="header-container">
+		</div>
+	</div>
+
+	<div id="hero-logo" class="hero-logo" style="opacity: 1;">
+		<div class="wrapper">
+			<div class="hero-logo-image">
+				<img width="400" height="400" src="/pictures/home/logo.jpg" class="attachment-full size-full" alt="Daniel &amp; Loan" srcset="/pictures/home/hero-logo.png 400w, /pictures/home/hero-logo-150x150.png 150w, /pictures/home/hero-logo-300x300.png 300w" sizes="(max-width: 400px) 100vw, 400px">
+			</div>
+			<div class="enter-action"> 
+				<a href="#intro" class="enter-button anchor-link">
+					<span>Enter Site</span>
+					<i class="fa fa-angle-double-down"></i>
+				</a>
+			</div>
+		</div>
+	</div>
+
+	<!--Navigation bar-->
+	<div id="navigation-bar" class="header-anchor">
+		<header id="header" class="header-section header-floating" role="banner" style="">
+			<div class="wrapper">
+				<h1 class="header-logo site-branding"> 
+					<a href="http://danielandloan.com" rel="home"> 
+						<img width="50" height="50" src="/pictures/home/header-logo.png" class="attachment-full size-full" alt="Daniel &amp; Loan"> 
+					</a>
+				</h1> 
+				<a class="ribbon-menu anchor-link" href="/#rsvp"> 
+					<span>RSVP</span> 
+				</a>
+				<nav id="site-navigation" class="header-navigation main-navigation clear" role="navigation"> 
+					<button class="header-navigation-toggle menu-toggle toggle"> 
+						
+
+						<span><i class="far fa-bars"></i></span> 
+						<span class="screen-reader-text">Primary Menu</span> 
+					</button>
+					<div class="menu-primary-container">
+						<ul id="primary-menu" class="menu" style="max-height: 496px;">
+							<li id="menu-item-45" class="nav-item navbar-nav navbar-center">
+								<a id="nav-home" href="#">Home</a>
+							</li>
+							<li id="menu-item-49" class="nav-item">
+								<a id="nav-groom&bride" href="#groom-bride">Groom &amp; Bride</a>
+							</li>
+							<li id="menu-item-48" class="nav-item">
+								<a id="nav-location" href="#events">Wedding Location</a>
+							</li>
+							<li id="menu-item-50" class="nav-item">
+								<a id="nav-gallery" href="#gallery">Gallery</a>
+							</li>									
+						</ul>
+					</div>
+				</nav>
+			</div>
+		</header>
+	</div>
+<!--End navigation bar -->
+<div class="row">
+			<div class="col-sm-4" style="background-color:white;">
+				<div id="pic-container">
+					<img class="circle" src="/pictures/home/brideAvatar.png">
+					<span><h4>DANIEL NGUYEN</h4></span>
+				</div>
+			</div>
+			<div class="col-sm-4" style="background-color:white;">
+				<div id="pic-container">
+					<img class="circle" src="/pictures/home/and-symbol.png">
+				</div>
+			</div>
+			<div class="col-sm-4" style="background-color:white;">
+				<div id="pic-container">
+					<img class="circle" src="/pictures/home/brideAvatar.png">
+					<span><h4>LOAN NGUYEN</h4></span>
+				</div>
+			</div>
+		</div>
+	<!--Event counter timer-->
+	<div id= "content" class="content">
+		
+		<div class="wrapper wrapper-center">
+			<div id="section-heading">
+				<h2>Are getting married</h2>
+			</div>
+			<div id="subsection-heading">
+				<h5>on April 14, 2019 - San Jose, California<h5>
+			</div>
+			<div class="count-down-clock" id="clock-div">
+				<div>
+					<span class="days"></span>
+					<div class="time-text">Days</div>
+				</div>
+				<div>
+					<span class="hours"></span>
+					<div class="time-text">Hours</div>
+				</div>
+				<div>
+					<span class="minutes"></span>
+					<div class="time-text">Minutes</div>
+				</div>
+				<div>
+					<span class="seconds"></span>
+					<div class="time-text">Seconds</div>
+				</div>	
+			</div>
+		</div>
+		
+	</div>
+
+</body>
+
+<!--<script src="/js/skills.js"></script>-->
+<script type="text/javascript">
+	function sizeFullHeight() {
+		document.getElementsByTagName("html")[0].style.minHeight = window.innerHeight+'px';
+		document.getElementsByTagName("body")[0].style.minHeight = window.innerHeight+'px';
+	}
+				//make transition smoothly
+				$("#nav-home").click(function() {
+					$('html, body').animate({
+						scrollTop: $(".navbar-header").offset().top
+					}, 1500);
+				});
+				$("#nav-event").click(function() {
+					$('html, body').animate({
+						scrollTop: $("#event").offset().top
+					}, 1500);
+				});
+				//make transition smoothly
+				$(".learn-more").click(function() {
+					$('html, body').animate({
+						scrollTop: $("#skills").offset().top
+					}, 1500);
+				});
+				$("#nav-guest").click(function() {
+					$('html, body').animate({
+						scrollTop: $("#guest").offset().top
+					}, 1500);
+				});
+				$("#nav-gallery").click(function() {
+					$('html, body').animate({
+						scrollTop: $("#gallery").offset().top
+					}, 1500);
+				});
+
+
+				sizeFullHeight();
+				window.onresize = sizeFullHeight;
+</script>
+<script type="text/javascript">
+				function getTimeRemaining(endtime) {
+					var now = new Date().getTime();
+					var t = endtime - now;
+					var seconds = Math.floor((t / 1000) % 60);
+					var minutes = Math.floor((t / 1000 / 60) % 60);
+					var hours = Math.floor((t / (1000 * 60 * 60)) % 24);
+					var days = Math.floor(t / (1000 * 60 * 60 * 24));
+					return {
+						'total': t,
+						'days': days,
+						'hours': hours,
+						'minutes': minutes,
+						'seconds': seconds
+					};
+				}
+
+				function initializeClock(id, endtime) {
+					var clock = document.getElementById(id);
+					var daysSpan = clock.querySelector('.days');
+					var hoursSpan = clock.querySelector('.hours');
+					var minutesSpan = clock.querySelector('.minutes');
+					var secondsSpan = clock.querySelector('.seconds');
+
+					function updateClock() {
+						var t = getTimeRemaining(endtime);
+
+						daysSpan.innerHTML = t.days;
+						hoursSpan.innerHTML = ('0' + t.hours).slice(-2);
+						minutesSpan.innerHTML = ('0' + t.minutes).slice(-2);
+						secondsSpan.innerHTML = ('0' + t.seconds).slice(-2);
+
+						if (t.total <= 0) {
+							clearInterval(timeinterval);
+						}
+					}
+
+					updateClock();
+					var timeinterval = setInterval(updateClock, 1000);
+				}
+
+				var deadline = new Date("April 14, 2019 17:00:00").getTime();
+				initializeClock('clock-div', deadline);
+</script>
+			
+<script src="/js/jquery-sakura.min.js"></script>
+<script>
+    // domReady
+    $(function() {
+    	$('body').sakura();
+    });
+
+    // windowLoad
+    $(window).load(function() {
+    	$('body').sakura();
+    });
+</script>
+
+<!--Sticky Navigation bar-->
+<script type="text/javascript">
+	// When the user scrolls the page, execute myFunction 
+	window.onscroll = function() {myFunction()};
+
+	// Get the navbar
+	var navbar = document.getElementById("navigation-bar");
+
+	// Get the offset position of the navbar
+	var sticky = navbar.offsetTop;
+
+	// Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
+	function myFunction() {
+	  if (window.pageYOffset >= sticky) {
+	    navbar.classList.add("sticky")
+	  } else {
+	    navbar.classList.remove("sticky");
+	  }
+	}
+</script>
+</html>
