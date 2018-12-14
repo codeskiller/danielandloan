@@ -141,17 +141,23 @@ div {
   border: hidden;
 }
 
-.circle {
-  display: inline-block;
-  left: 50%;
-  margin: auto;
+.intro{
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  padding: 100px 0px;
+}
+.row{
+  display: block;
+  width: calc(100% - ( 0 * 30px ) );
+  position: relative;
 }
 #pic-container{
-  margin: auto;
   display: inline-block;
   text-align: center;
   padding-top: 30px;
 }
+
 /*------------Top Header----------------*/
 .content a img {
   margin-top: 100px; 
@@ -221,11 +227,11 @@ div {
 element.style {
     color: #dcc8b4;
 }
-.section-heading{
-  font-family: "Alext Brush";
+#section-heading{
+  font-family: "Alex Brush";
   font-size: 400%;
 }
-.subsection-heading{
+#subsection-heading{
   font-family: "Arial";
   font-size: 100%;
 }
@@ -263,4 +269,50 @@ element.style {
 #time-text{
   padding-top: 5px;
   font-size: 16px;
+}
+
+/*-----------------Footer section ----------------*/
+.footer-section{
+  padding: 50% 3em;
+  background-color: white;
+  background-image: url(/pictures/home/footer.jpg);
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: center;
+  display: block;
+  width: 100%;
+}
+
+/*-----------------Background Music Section--------------*/
+.background-music-section{
+  right: auto;
+  left: 10px;
+  position: fixed;
+  z-index: 999;
+  bottom: 10px;
+}
+#music-toggle-button{
+  width: 50px;
+  height: 50px;
+  bottom: 0px;
+  right: auto;
+  left: 0px;
+  position: absolute;
+  text-align: center;
+  color: white;
+  background-color: #b4d2c8;
+}
+#music-embed{
+  width: 300px;
+  right: auto;
+  left: 0px;
+  bottom: 50px;
+  opacity: 0;
+  visibility: visible;
+  position: absolute;
+}
+button{
+  -webkit-appearance: button;
+  cursor: pointer;
 }

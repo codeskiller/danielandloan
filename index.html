@@ -84,25 +84,28 @@
 		</header>
 	</div>
 <!--End navigation bar -->
-<div class="row">
-			<div class="col-sm-4" style="background-color:white;">
+<div class="intro" id="intro">
+	<div class="row" style="background-color:white;">
+			<div>
 				<div id="pic-container">
 					<img class="circle" src="/pictures/home/brideAvatar.png">
 					<span><h4>DANIEL NGUYEN</h4></span>
 				</div>
 			</div>
-			<div class="col-sm-4" style="background-color:white;">
-				<div id="pic-container">
+			<div>
+				<div id="pic-container>
 					<img class="circle" src="/pictures/home/and-symbol.png">
 				</div>
 			</div>
-			<div class="col-sm-4" style="background-color:white;">
+			<div>
 				<div id="pic-container">
 					<img class="circle" src="/pictures/home/brideAvatar.png">
 					<span><h4>LOAN NGUYEN</h4></span>
 				</div>
 			</div>
-		</div>
+	</div>
+</div>
+
 	<!--Event counter timer-->
 	<div id= "content" class="content">
 		
@@ -136,6 +139,23 @@
 	</div>
 
 </body>
+<footer class="footer-section">
+	<div class="wrapper">
+		<div id="footer-logo">
+			
+		</div>
+		<a href="www.danielnguyen.xyz">Copyright@2018-designed by Daniel Nguyen</a>
+	</div>
+</footer>
+<div class="background-music-section">
+	<button id="music-toggle-button" onclick="playMusic()">
+		<span class="fa fa-music"></span>
+	</button>
+	<div id="music-embed">
+		<iframe width="100%" height="170" scrolling="no" allow="autoplay" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/134815445&amp;color=b4d2c8&amp;auto_play=true&amp;hide_related=true&amp;show_comments=false&amp;show_user=true&amp;show_reposts=false"></iframe>
+	</div>
+	
+</div>
 
 <!--<script src="/js/skills.js"></script>-->
 <script type="text/javascript">
@@ -175,6 +195,7 @@
 				sizeFullHeight();
 				window.onresize = sizeFullHeight;
 </script>
+<!--Counter timer-->
 <script type="text/javascript">
 				function getTimeRemaining(endtime) {
 					var now = new Date().getTime();
@@ -220,6 +241,7 @@
 				initializeClock('clock-div', deadline);
 </script>
 			
+<!--sakura effec-->
 <script src="/js/jquery-sakura.min.js"></script>
 <script>
     // domReady
@@ -251,6 +273,24 @@
 	  } else {
 	    navbar.classList.remove("sticky");
 	  }
+	}
+</script>
+<script>
+	var count = 1;
+	function playMusic(){
+		 
+		if(count == 1){
+			document.getElementById("music-embed").style.visible = "visible";
+			document.getElementById("music-embed").style.opacity = 1;
+			count = 0;
+		}
+		else
+		{
+			document.getElementById("music-embed").style.visible = "hidden";
+			document.getElementById("music-embed").style.opacity = 0;
+			count = 1;
+		}
+		
 	}
 </script>
 </html>
