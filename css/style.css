@@ -316,3 +316,7 @@ button{
   -webkit-appearance: button;
   cursor: pointer;
 }
+.wrapper-footer{
+  bottom: 10px;
+  text-align: center;
+}
