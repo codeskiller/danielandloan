@@ -45,45 +45,34 @@
 	</div>
 
 	<!--Navigation bar-->
-	<div id="navigation-bar" class="header-anchor">
-		<header id="header" class="header-section header-floating" role="banner" style="">
-			<div class="wrapper">
-				<h1 class="header-logo site-branding"> 
-					<a href="http://danielandloan.com" rel="home"> 
-						<img width="50" height="50" src="/pictures/home/header-logo.png" class="attachment-full size-full" alt="Daniel &amp; Loan"> 
-					</a>
-				</h1> 
-				<a class="ribbon-menu anchor-link" href="/#rsvp"> 
-					<span>RSVP</span> 
-				</a>
-				<nav id="site-navigation" class="header-navigation main-navigation clear" role="navigation"> 
-					<button class="header-navigation-toggle menu-toggle toggle"> 
-						
-
-						<span><i class="far fa-bars"></i></span> 
-						<span class="screen-reader-text">Primary Menu</span> 
-					</button>
-					<div class="menu-primary-container">
-						<ul id="primary-menu" class="menu" style="max-height: 496px;">
-							<li id="menu-item-45" class="nav-item navbar-nav navbar-center">
-								<a id="nav-home" href="#">Home</a>
-							</li>
-							<li id="menu-item-49" class="nav-item">
-								<a id="nav-groom&bride" href="#groom-bride">Groom &amp; Bride</a>
-							</li>
-							<li id="menu-item-48" class="nav-item">
-								<a id="nav-location" href="#events">Wedding Location</a>
-							</li>
-							<li id="menu-item-50" class="nav-item">
-								<a id="nav-gallery" href="#gallery">Gallery</a>
-							</li>									
-						</ul>
-					</div>
-				</nav>
+		<nav class="navbar" id="navbar">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>			
+				</button>
 			</div>
-		</header>
-	</div>
-<!--End navigation bar -->
+			<div class="collapse navbar-collapse">
+				<ul class="nav navbar-nav navbar-center">
+					<li class="nav-item">
+						<img src="/pictures/home/header-logo.png" width="50" height="50">
+					</li>
+					<li class="nav-item">
+						<a id="nav-home" href="#">HOME</a>
+					</li>
+					<li class="nav-item">
+						<a id="nav-groom-bride" href="#">GROOM & BRIDE</a>
+					</li>
+					<li class="nav-item">
+						<a id="nav-event" href="#">EVENT</a>
+					</li>
+					<li class="nav-item">
+						<a id="nav-gallery" href="#">GALLERY</a>
+					</li>
+				</ul>	
+			</div>
+		</nav> <!--End navigation bar -->
 <div class="intro" id="intro">
 	<div class="row" style="background-color:white;">
 			<div>
@@ -140,10 +129,16 @@
 
 </body>
 <footer class="footer-section">
+	<div class="wrapper">
+		<div class="footer-logo">
+			<img width="210" height="210" src="/pictures/home/hero-logo.png" srcset="/pictures/home/hero-logo.png 210w, /pictures/home/hero-logo-150x150.png 150w" sizes="(max-width: 210px) 100w, 210px">
+		</div>
 	<div class="wrapper-footer">
 		<a href="www.danielnguyen.xyz">Copyright@2018-designed by Daniel Nguyen</a>
 	</div>
+	</div>	
 </footer>
+
 <div class="background-music-section">
 	<button id="music-toggle-button" onclick="playMusic()">
 		<span class="fa fa-music"></span>

@@ -65,7 +65,7 @@ a {
     font-style: normal;
 }
 
-
+/*----------------Navigation bar--------------*/
 @media screen and (max-width: 1023px)
 .wrapper {
     width: 760px;
@@ -76,24 +76,46 @@ a {
         display: inline-block;
         float: none;
         vertical-align: top;
+          border-color: #D1D19E;
     }
     .navbar .navbar-collapse {
         text-align: center;
+          border-color: #D1D19E;
     }
 }
-/* Style the navbar */
-#navigation-bar {
+.navbar {
   overflow: hidden;
-  background-color: #3333;
+  background-color: white;
+  border-color: #D1D19E;
 }
-/* Navbar items */
-.header-floating,#primary-menu a {
+
+#navbar>div>ul>li{
+  padding: 25px 0;
+  margin: 0 1.5em;
+  float: left;
+}
+#navbar a {
   float: left;
   display: block;
-  color: #f2f2f2;
+  color: #D1D19E;
   text-align: center;
-  padding: 14px;
+  padding: 14px 16px;
   text-decoration: none;
+  font-size: 17px;
+}
+
+#navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+#navbar a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+a:-webkit-any-link {
+    color: -webkit-link;
+    cursor: pointer;
 }
 .content {
   padding: 16px;
@@ -108,6 +130,7 @@ a {
 .sticky + .content {
   padding-top: 60px;
 }
+
 /*---------------Header navigation---------------*/
 .header-anchor {
     height: 71px;
@@ -128,8 +151,12 @@ a {
     text-align: center;
     vertical-align: middle;
 }
-.wrapper{
-  display: inline-block;
+.wrapper {
+    position: relative;
+    width: 970px;
+    padding: 0 15px;
+    margin-left: auto;
+    margin-right: auto;
 }
 .wrapper-center{
   margin: auto;
@@ -283,6 +310,16 @@ element.style {
   display: block;
   width: 100%;
 }
+.footer-logo{
+  text-align: center;
+}
+.wrapper-footer{
+  top: 90px;
+  text-align: center;
+  z-index: 1;
+  margin: 0 4px;
+  border-bottom: none;
+}
 
 /*-----------------Background Music Section--------------*/
 .background-music-section{
@@ -315,8 +352,6 @@ element.style {
 button{
   -webkit-appearance: button;
   cursor: pointer;
+  border-radius: 10px;
 }
-.wrapper-footer{
-  bottom: 10px;
-  text-align: center;
-}
+
