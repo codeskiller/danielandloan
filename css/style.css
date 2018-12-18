@@ -179,10 +179,18 @@ div {
   width: calc(100% - ( 0 * 30px ) );
   position: relative;
 }
+#intro-container{
+  float: center;
+  margin: 0 auto;
+}
 #pic-container{
+  padding: 20px 20px 20px 20px;
+  position: relative;
   display: inline-block;
   text-align: center;
-  padding-top: 30px;
+  padding-top: 10px;
+  margin: 0 auto;
+  float: left;
 }
 
 /*------------Top Header----------------*/
@@ -300,7 +308,7 @@ element.style {
 
 /*-----------------Footer section ----------------*/
 .footer-section{
-  padding: 50% 3em;
+  padding: 25% 3em;
   background-color: white;
   background-image: url(/pictures/home/footer.jpg);
   background-position: bottom;
@@ -311,14 +319,13 @@ element.style {
   width: 100%;
 }
 .footer-logo{
+  padding-bottom: 100px;
   text-align: center;
 }
-.wrapper-footer{
-  top: 90px;
+.wrapper-footer a{
   text-align: center;
-  z-index: 1;
-  margin: 0 4px;
-  border-bottom: none;
+  bottom: 0;
+  color: white;
 }
 
 /*-----------------Background Music Section--------------*/
