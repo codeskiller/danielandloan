@@ -90,28 +90,7 @@
 			</div>
 		</div>			
 </div>
-<div class="intro-detail">
-	<div class="intro-container">
-		<div class="row">
-			<div class="col-sm-6">
-				<img src="/pictures/home/groom-bride.jpg">
-			</div>
-			<div class="col-sm-6">
-				<h5>DANIEL NGUYEN></h5>
-				<span><p>Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum.</p></span>
-			</div>
-		</div>
-		<div class="row">
-			<div class="col-sm-6">
-				<h5>LOAN NGUYEN></h5>
-				<span><p>Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum.</p></span>
-			</div>
-			<div class="col-sm-6">
-				<img src="/pictures/home/groom-bride.jpg">
-			</div>
-		</div>
-	</div>
-</div>
+
 
 	<!--Event counter timer-->
 	<div id= "content" class="content">
@@ -144,7 +123,80 @@
 		</div>
 		
 	</div>
+	<div class="intro-detail">
+		<div class="intro-text-container">
+				<div class="title">
+					<h3>Groom</h3>
+					<img src="/pictures/home/and-symbol.png">
+					<h3>Bride</h3>
+				</div>
+			<div class="row">
+				<div class="col-sm-6">
+					<img src="/pictures/home/groom-bride.jpg">
+				</div>
+				<div class="col-sm-6">
+					<h5 class="heading-text">DANIEL NGUYEN</h5>
+					<span><p>Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum.</p></span>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-sm-6">
+					<h5 class="heading-text">LOAN NGUYEN</h5>
+					<span><p>Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum.</p></span>
+				</div>
+				<div class="col-sm-6">
+					<img src="/pictures/home/groom-bride.jpg">
+				</div>
+			</div>
+		</div>
+	</div>
 
+	<div class="event">
+		<div class="event-container">
+			<div class="row">
+				<div class="title">
+					<h3>When</h3><span><img src="/pictures/home/and-symbol.png"></span><h3>Where</h3>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-sm-6 event-col">
+					<div class="col-container">
+						<img src="/pictures/home/ceremony-logo.jpg">
+						<div id="center-icon">
+							<img src="/pictures/home/love-icon.png">
+						</div>
+						<div class="space"></div>
+						<h5 class="heading-text">WEDDING CEREMONY</h5>
+						<div id="ceremony-detail">	
+							<p>Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum.</p>
+							<strong><p>10:00 AM on Saturday, April 13, 2018<br>Home, San Jose</p></strong>
+						</div>
+					</div>
+					
+				</div>
+				<div class="col-sm-6 event-col">
+					<div class="col-container">
+						<img src="/pictures/home/party-logo.jpg">
+						<div id="center-icon">
+							<img src="/pictures/home/glass-icon.png">
+						</div>
+						<div class="space"></div>
+						<h5 class="heading-text">WEDDING PARTY</h5>
+						<div id="party-detail">	
+							<p>Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum.</p>
+							<strong><p>18:00 PM on Sunday, April 14, 2018<br>Wedgewood Boulder Ridge, San Jose</p></strong>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="map" id="map">
+		<div>
+			
+		</div>
+	</div>
 </body>
 <footer class="footer-section">
 	<div class="wrapper">
@@ -249,7 +301,7 @@
 
 				var deadline = new Date("April 14, 2019 17:00:00").getTime();
 				initializeClock('clock-div', deadline);
-</script>
+</script> 
 			
 <!--sakura effec-->
 <script src="/js/jquery-sakura.min.js"></script>
@@ -263,7 +315,7 @@
     $(window).load(function() {
     	$('body').sakura();
     });
-</script>
+</script> 
 
 <!--Sticky Navigation bar-->
 <script type="text/javascript">
@@ -284,6 +336,22 @@
 	    navbar.classList.remove("sticky");
 	  }
 	}
+</script>
+<script>
+// Initialize and add the map
+function initMap() {
+  // The location of san jose
+  var sanjose = {lat: 37.3329447, lng: -121.8951667};
+  var center = {lat: 37.2948056, lng: -121.874272};
+  var restaurant = {lat: 37.233644, lng: -121.8591517}
+  var marker = new google.maps.Marker({position: sanjose, map: map}); 
+  var marker2 = new google.maps.Marker({position: restaurant, map: map});
+  var map = new google.maps.Map(
+      document.getElementById('map'), {zoom: 13, center: center});
+}
+</script>
+<script async defer
+	src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAzYhdKQwHyNO76zgV5RaXit5a4Tre-COc&callback=initMap">
 </script>
 <script>
 	var count = 1;

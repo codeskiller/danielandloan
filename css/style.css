@@ -1,4 +1,61 @@
 
+/*------------Top Header----------------*/
+.home-header:before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    pointer-events: none;
+
+   /* set background-image in all browsers*/
+    background-image: -webkit-linear-gradient(left, rgba(0,0,0,0.2), rgba(0,0,0,0.2));
+    background-image: -moz-linear-gradient(left, rgba(0,0,0,0.2), rgba(0,0,0,0.2));
+    background-image: -o-linear-gradient(left, rgba(0,0,0,0.2), rgba(0,0,0,0.2));
+    background-image: -ms-linear-gradient(left, rgba(0,0,0,0.2), rgba(0,0,0,0.2));
+    background-image: linear-gradient(90deg, rgba(0,0,0,0.2), rgba(0,0,0,0.2));
+}
+.home-header {
+    background-image: url(/pictures/home/logo.jpg);
+    position: relative;
+}
+#fullscreen-header {
+    height: 100vh;
+    position: relative;
+    text-align: center;
+    width: 100%;
+    min-height: 350px;
+    background-color: #2A3A3F;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    padding: 30px;
+}
+#fullscreen-header:before, #fullscreen-header:after{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+
+.header-container {
+    display: table;
+    margin: 0 auto;
+    padding: 0 20px;
+    height: 100%;
+}
+.header-content {
+    display: table-cell;
+    position: relative;
+    z-index: 10;
+    text-align: center;
+    vertical-align: middle;
+}
+
+/*--------------sakura effect-----------------*/
 .hero-logo {
   position: absolute;
   width: 100%;
@@ -167,7 +224,7 @@ div {
   border-color: white;
   border: hidden;
 }
-
+/*----------Intro Picture-----------*/
 .intro{
   display: flex;
   flex-wrap: nowrap;
@@ -192,72 +249,7 @@ div {
   margin: 0 auto;
   float: left;
 }
-
-/*------------Top Header----------------*/
-.content a img {
-  margin-top: 100px; 
-  height: 100px; 
-  max-width: 100%;
-}
-.home-header:before {
-    content: "";
-    display: block;
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    pointer-events: none;
-
-   /* set background-image in all browsers*/
-    background-image: -webkit-linear-gradient(left, rgba(49,61,65,0.6), rgba(49,61,65,0.6));
-    background-image: -moz-linear-gradient(left, rgba(49,61,65,0.6), rgba(49,61,65,0.6));
-    background-image: -o-linear-gradient(left, rgba(49,61,65,0.6), rgba(49,61,65,0.6));
-    background-image: -ms-linear-gradient(left, rgba(49,61,65,0.6), rgba(49,61,65,0.6));
-    background-image: linear-gradient(90deg, rgba(49,61,65,0.6), rgba(49,61,65,0.6));
-}
-.home-header {
-    background-image: url(/pictures/home/logo.jpg);
-    position: relative;
-}
-#fullscreen-header {
-    height: 100vh;
-    position: relative;
-    text-align: center;
-    width: 100%;
-    min-height: 350px;
-    background-color: #2A3A3F;
-    background-size: cover;
-    background-position: center center;
-    background-repeat: no-repeat;
-    padding: 30px;
-}
-#fullscreen-header:before, #fullscreen-header:after{
-    content: '';
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-}
-
-
-.header-container {
-    display: table;
-    margin: 0 auto;
-    padding: 0 20px;
-    height: 100%;
-}
-.header-content {
-    display: table-cell;
-    position: relative;
-    z-index: 10;
-    text-align: center;
-    vertical-align: middle;
-}
-.cd-intro span{
-    color: #fff;
-}
-
-/*------------Heading Section -------------*/
+/*------------Heading Clock Section -------------*/
 
 element.style {
     color: #dcc8b4;
@@ -304,6 +296,74 @@ element.style {
 #time-text{
   padding-top: 5px;
   font-size: 16px;
+}
+
+/*------------Intro Detail-----------------*/
+.heading-text{
+  font-size: 120%;
+  letter-spacing: 0.1em;
+  font-style: italic;
+  padding: 10px;
+}
+.intro-text-container{
+  display: block;
+  padding: 2em 2em 2em 2em;
+  margin: 4em 4em 4em 4em;
+  background-color: #f6f4f2;
+}
+.title{
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+}
+.title img{
+  vertical-align: middle;
+}
+.title h3{
+  display: inline-block;
+  color: #ffdab9;
+  font-family: "Alex Brush";
+  font-size: 400%;
+}
+
+/*------------Event Section----------------*/
+.event{
+  background-color: #f6f4f2;
+}
+.col-container{
+  text-align: center;
+}
+#ceremony-detail, #party-detail{
+  padding: 20px 100px 100px 100px;
+  text-align: center;
+}
+#center-icon{
+  margin-top: -2em;
+  position: absolute;
+  left: 50%;
+  margin-left: -30px;
+  margin-bottom: 0;
+}
+#center-icon{
+  border-radius: 10%;
+}
+@media screen and (max-width: 767px)
+.event-col{
+  width: 100%;
+}
+.event-col{
+  background-color: #ffffff;
+  padding: 10px;
+  float: left;
+  text-align: center;
+  width: 50%;
+
+}
+
+/*-----------------Map section -------------------*/
+#map{
+  height: 500px;  /* The height is 400 pixels */
+  width: 100%;  /* The width is the width of the web page */
 }
 
 /*-----------------Footer section ----------------*/
@@ -361,4 +421,6 @@ button{
   cursor: pointer;
   border-radius: 10px;
 }
-
+.space{
+  margin-top: 3em;
+}
