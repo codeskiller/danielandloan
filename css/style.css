@@ -1,9 +1,40 @@
 
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+body {
+  background: #F5F5F5F5;
+  color: #67727A;
+  font-family: sans-serif;
+  margin: 0;
+}
+h3 {
+  padding-top: 2%;
+  font-weight: 700;
+}
+div {
+  display: block;
+  box-shadow: none;
+  border-color: white;
+  border: hidden;
+}
+element.style {
+    color: #dcc8b4;
+}
+.wrapper-container{
+  width: 980px;
+  margin: 0 auto;
+
+}
+.blank-wrapper {
+  padding: 50px;
+}
 /*------------Top Header----------------*/
-.home-header:before {
-    content: "";
+
+#fullscreen-header:before {
     display: block;
-    position: absolute;
     top: 0;
     right: 0;
     bottom: 0;
@@ -17,16 +48,13 @@
     background-image: -ms-linear-gradient(left, rgba(0,0,0,0.2), rgba(0,0,0,0.2));
     background-image: linear-gradient(90deg, rgba(0,0,0,0.2), rgba(0,0,0,0.2));
 }
-.home-header {
-    background-image: url(/pictures/home/logo.jpg);
-    position: relative;
-}
 #fullscreen-header {
+    background-image: url(/pictures/home/logo.jpg);
     height: 100vh;
     position: relative;
     text-align: center;
     width: 100%;
-    min-height: 350px;
+    min-height: 320px;
     background-color: #2A3A3F;
     background-size: cover;
     background-position: center center;
@@ -40,19 +68,11 @@
     width: 100%;
 }
 
-
 .header-container {
     display: table;
     margin: 0 auto;
     padding: 0 20px;
     height: 100%;
-}
-.header-content {
-    display: table-cell;
-    position: relative;
-    z-index: 10;
-    text-align: center;
-    vertical-align: middle;
 }
 
 /*--------------sakura effect-----------------*/
@@ -66,7 +86,7 @@
   text-align: center;
   padding: 70px 0;
 }
-.hero-logo .wrapper {
+.hero-logo .wrapper-container {
     position: relative;
     height: 100%;
 }
@@ -123,29 +143,19 @@ a {
 }
 
 /*----------------Navigation bar--------------*/
-@media screen and (max-width: 1023px)
-.wrapper {
-    width: 760px;
-}
-
-@media screen and (min-width: 768px){
-  .navbar .navbar-nav {
-        display: inline-block;
-        float: none;
-        vertical-align: top;
-          border-color: #D1D19E;
-    }
-    .navbar .navbar-collapse {
-        text-align: center;
-          border-color: #D1D19E;
-    }
-}
-.navbar {
+.navbar{
   overflow: hidden;
-  background-color: white;
-  border-color: #D1D19E;
+  background-color: #DDF9D3;
+  border-bottom-width: 10px;
+  border-color: grey;
 }
-
+.navbar span {
+  background: black;
+}
+.nav-item img {
+  width: 50px;
+  height: 50px;
+}
 #navbar>div>ul>li{
   padding: 25px 0;
   margin: 0 1.5em;
@@ -156,7 +166,7 @@ a {
   display: block;
   color: #D1D19E;
   text-align: center;
-  padding: 14px 16px;
+  padding: 5px 5px;
   text-decoration: none;
   font-size: 17px;
 }
@@ -184,76 +194,43 @@ a:-webkit-any-link {
   width: 100%;
 }
 
-.sticky + .content {
-  padding-top: 60px;
+.sticky + .intro {
+  padding-top: 40px;
 }
 
 /*---------------Header navigation---------------*/
 .header-anchor {
-    height: 71px;
+    height: 50px;
 }
-@media screen and (max-width: 1023px)
-.ribbon-menu+.header-navigation {
-    padding-right: 70px;
-}
-
 .header-navigation {
     display: block;
-    padding: 0 70px;
+    padding: 0 20px;
     clear: both;
     text-align: center;
 }
-.content {
-    position: relative;
-    text-align: center;
-    vertical-align: middle;
-}
-.wrapper {
-    position: relative;
-    width: 970px;
-    padding: 0 15px;
-    margin-left: auto;
-    margin-right: auto;
-}
-.wrapper-center{
-  margin: auto;
-}
-div {
-  display: block;
-  box-shadow: none;
-  border-color: white;
-  border: hidden;
-}
+
+
 /*----------Intro Picture-----------*/
 .intro{
-  display: flex;
-  flex-wrap: nowrap;
-  justify-content: space-between;
-  padding: 100px 0px;
-}
-.row{
-  display: block;
-  width: calc(100% - ( 0 * 30px ) );
-  position: relative;
-}
-#intro-container{
-  float: center;
+  padding: 70px 0px;
+  width: 100%;
+  float: left;
+  text-align: center;
   margin: 0 auto;
 }
 #pic-container{
-  padding: 20px 20px 20px 20px;
-  position: relative;
   display: inline-block;
   text-align: center;
   padding-top: 10px;
   margin: 0 auto;
-  float: left;
+}
+.content-detail {
+  margin: 0 auto;
+  text-align: center;
+  vertical-align: middle;
 }
 /*------------Heading Clock Section -------------*/
 
-element.style {
-    color: #dcc8b4;
-}
 #section-heading{
   font-family: "Alex Brush";
   font-size: 400%;
@@ -271,7 +248,6 @@ element.style {
   font-size: 30px;
   margin: 0 auto;
   width: 720px;
-
 }
 
 #clock-div > div{
@@ -305,11 +281,13 @@ element.style {
   font-style: italic;
   padding: 10px;
 }
+.intro-detail {
+  background-color: #f6f4f2;
+}
 .intro-text-container{
   display: block;
   padding: 2em 2em 2em 2em;
   margin: 4em 4em 4em 4em;
-  background-color: #f6f4f2;
 }
 .title{
   display: block;
@@ -326,6 +304,34 @@ element.style {
   font-size: 400%;
 }
 
+.loan-photo, .daniel-photo{
+  height: 470px;
+  width: 450px;
+  background-repeat: no-repeat;
+  border-radius: 10px;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border: 2px solid red;
+}
+.daniel-photo {
+  background-image: url(/pictures/home/groom-bride.jpg);
+}
+.loan-photo {
+  background-image: url(/pictures/home/Loan.jpg);
+}
+.grid-container {
+  display: grid;
+  grid-column-gap: 50px;
+  grid-template-columns: auto auto auto;
+  background-color: #f6f4f2;
+  padding: 5px;
+}
+.daniel-block, .loan-block {
+  background-color: #f6f4f2;
+  padding: 10px;
+  font-size: 14px;
+  text-align: center;
+}
 /*------------Event Section----------------*/
 .event{
   background-color: #f6f4f2;
@@ -334,7 +340,7 @@ element.style {
   text-align: center;
 }
 #ceremony-detail, #party-detail{
-  padding: 20px 100px 100px 100px;
+  padding: 20px 100px 50px 100px;
   text-align: center;
 }
 #center-icon{
@@ -352,7 +358,7 @@ element.style {
   width: 100%;
 }
 .event-col{
-  background-color: #ffffff;
+  background-color: #f6f4f2;
   padding: 10px;
   float: left;
   text-align: center;
@@ -366,6 +372,96 @@ element.style {
   width: 100%;  /* The width is the width of the web page */
 }
 
+/*-----------------RSVP form section--------------*/
+
+
+.wrap{
+  background-image: url(/pictures/home/background-party.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+}
+.title-RSVP{
+  font-size: 250%;
+  color: #ffdab9;
+  padding-bottom: 15px;
+  text-align: center;
+  font-family: "Alex Brush";
+}
+.title-RSVP2{
+  font-size: 150%;
+  color: #ffdab9;
+  padding-bottom: 15px;
+  text-align: center;
+  font-family: "Alex Brush";
+}
+.red {
+  color: red;
+}
+.col-sm-6{
+  width: 50%;
+}
+.contact-form{
+  font-color: #808080;
+  font-size: 15px;
+  letter-spacing: .01em;
+  margin: 0 auto;
+  text-align: center;
+  display: block;
+  background-color: #f6f4f2;
+  width: 600px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  padding: 20px;
+}
+input{
+  background-color: #ffffff;
+  border: 1px solid #cccccc;
+  border-radius: 4px;
+}
+input:focus, textarea:focus{
+background-color: lightyellow;
+}
+textarea{
+  width: 95% !important;
+  margin-top: 10px;
+  min-height: 170px;
+  border-radius: 5px;
+  border-color: #DDF9D3;
+  background-color: #DDF9D3;
+}
+.submit{
+  box-shadow: none;
+  background-color: #27a2db;
+  color: #fff !important;
+  font-size: 14px;
+  line-height: 14px;
+  max-width: 200px;
+  border-radius: 5px;
+  padding: 10px 50px;
+
+}
+.reset{
+  box-shadow: none;
+  background-color: #FF6347;
+  color: #fff !important;
+  font-size: 14px;
+  line-height: 14px;
+  max-width: 200px;
+  border-radius: 5px;
+  padding: 10px 50px;
+
+}
+.back{
+  box-shadow: none;
+  background-color: #27a2db;
+  color: #fff !important;
+  font-size: 14px;
+  line-height: 14px;
+  max-width: 200px;
+  border-radius: 5px;
+  padding: 10px 50px;
+}
 /*-----------------Footer section ----------------*/
 .footer-section{
   padding: 25% 3em;
@@ -378,13 +474,10 @@ element.style {
   display: block;
   width: 100%;
 }
-.footer-logo{
-  padding-bottom: 100px;
+.footer-copyright{
   text-align: center;
 }
-.wrapper-footer a{
-  text-align: center;
-  bottom: 0;
+.footer-copyright a{ 
   color: white;
 }
 

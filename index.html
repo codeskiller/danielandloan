@@ -2,49 +2,45 @@
 <html>
 <head>
 	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
 	<title>Daniel And Loan</title>
 	<!--main css--> 
-	<link rel="shortcut-icon" type="image/png" href="/pictures/home/heart.png">
-	<link rel="stylesheet" href="/css/style.css">
-	<link rel="stylesheet" type="text/css" media="screen and (max-device-width: 480px)" href="/css/mobile.css" />
-
+	<link rel="shortcut-icon" type="image/png" href="/pictures/home/heart.png"/>
+	<link rel="stylesheet" href="/css/style.css"/>
+	<link rel="stylesheet" type="text/css" href="/css/mobile.css"/>
 	<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Alex Brush' rel='stylesheet'>
 	<!--icons css-->
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.0/css/all.css" integrity="sha384-aOkxzJ5uQz7WBObEZcHvV5JvRW3TUc2rNPA7pe3AwnsUohiw1Vj2Rgx2KSOkF5+h" crossorigin="anonymous">
 	<!-- Latest compiled and minified CSS -->
 	<link rel="stylesheet" href="bootstrap-3.3.7-dist2/css/bootstrap.min.css">
-	<link type="text/css" rel="stylesheet" media="screen" href="/css/jquery-sakura.min.css" />
+	<link type="text/css" rel="stylesheet" media="screen" href="/css/jquery-sakura.min.css"/>
 	<!-- Latest compiled and minified JavaScript -->
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 	<script src="/bootstrap-3.3.7-dist2/js/bootstrap.min.js"></script>
 	<!--Angularjs library-->
 	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.2/angular.min.js" ></script>
 </head>
 <body>
+	<div id="container">
 
-<!--sakura effect-->
-	<div id="hero-effect" class="hero-effect" data-jackrose-effect="petal" style="overflow-x: hidden;"><div class="sakura hero-effect-item petal" style="animation: fall 9.487s linear 0s 1 normal none running, blow-soft-left 21s linear 0s infinite normal none running, sway-6 3s linear 0s infinite normal none running; border-radius: 21px 2px; height: 10px; left: 408.368px; margin-top: -31px; width: 9px;"></div><div class="sakura hero-effect-item petal" style="animation: fall 7.487s linear 0s 1 normal none running, blow-medium-right 12s linear 0s infinite normal none running, sway-7 3s linear 0s infinite normal none running; border-radius: 21px 2px; height: 13px; left: 201.618px; margin-top: -28px; width: 12px;"></div><div class="sakura hero-effect-item petal" style="animation: fall 6.487s linear 0s 1 normal none running, blow-soft-left 25s linear 0s infinite normal none running, sway-0 2s linear 0s infinite normal none running; border-radius: 21px 1px; height: 13px; left: 196.391px; margin-top: -30px; width: 12px;"></div><div class="sakura hero-effect-item petal" style="animation: fall 9.487s linear 0s 1 normal none running, blow-medium-left 19s linear 0s infinite normal none running, sway-6 3s linear 0s infinite normal none running; border-radius: 17px 1px; height: 9px; left: 546.708px; margin-top: -16px; width: 9px;"></div><div class="sakura hero-effect-item petal" style="animation: fall 6.487s linear 0s 1 normal none running, blow-medium-left 24s linear 0s infinite normal none running, sway-7 3s linear 0s infinite normal none running; border-radius: 15px 1px; height: 14px; left: 681.129px; margin-top: -23px; width: 14px;"></div><div class="sakura hero-effect-item petal" style="animation: fall 7.487s linear 0s 1 normal none running, blow-soft-right 16s linear 0s infinite normal none running, sway-3 4s linear 0s infinite normal none running; border-radius: 22px 1px; height: 11px; left: 223.941px; margin-top: -18px; width: 10px;"></div><div class="sakura hero-effect-item petal" style="animation: fall 8.487s linear 0s 1 normal none running, blow-soft-left 13s linear 0s infinite normal none running, sway-1 2s linear 0s infinite normal none running; border-radius: 21px 1px; height: 11px; left: 540.9px; margin-top: -17px; width: 11px;"></div><div class="sakura hero-effect-item petal" style="animation: fall 7.487s linear 0s 1 normal none running, blow-medium-right 13s linear 0s infinite normal none running, sway-5 3s linear 0s infinite normal none running; border-radius: 14px 1px; height: 10px; left: 489.072px; margin-top: -32px; width: 8px;"></div><div class="sakura hero-effect-item petal" style="animation: fall 6.487s linear 0s 1 normal none running, blow-medium-left 11s linear 0s infinite normal none running, sway-6 3s linear 0s infinite normal none running; border-radius: 20px 1px; height: 14px; left: 649.551px; margin-top: -27px; width: 12px;"></div><div class="sakura hero-effect-item petal" style="animation: fall 6.487s linear 0s 1 normal none running, blow-soft-right 25s linear 0s infinite normal none running, sway-5 3s linear 0s infinite normal none running; border-radius: 15px 2px; height: 9px; left: 265.369px; margin-top: -32px; width: 8px;"></div><div class="sakura hero-effect-item petal" style="animation: fall 7.487s linear 0s 1 normal none running, blow-soft-right 19s linear 0s infinite normal none running, sway-1 4s linear 0s infinite normal none running; border-radius: 18px 1px; height: 9px; left: 681.536px; margin-top: -28px; width: 7px;"></div><div class="sakura hero-effect-item petal" style="animation: fall 6.487s linear 0s 1 normal none running, blow-soft-right 25s linear 0s infinite normal none running, sway-3 2s linear 0s infinite normal none running; border-radius: 14px 2px; height: 13px; left: 354.96px; margin-top: -29px; width: 12px;"></div><div class="sakura hero-effect-item petal" style="animation: fall 5.487s linear 0s 1 normal none running, blow-medium-right 27s linear 0s infinite normal none running, sway-6 2s linear 0s infinite normal none running; border-radius: 16px 2px; height: 10px; left: 345.765px; margin-top: -24px; width: 8px;"></div><div class="sakura hero-effect-item petal" style="animation: fall 5.487s linear 0s 1 normal none running, blow-soft-left 16s linear 0s infinite normal none running, sway-5 4s linear 0s infinite normal none running; border-radius: 17px 1px; height: 10px; left: 640.944px; margin-top: -25px; width: 8px;"></div><div class="sakura hero-effect-item petal" style="animation: fall 4.487s linear 0s 1 normal none running, blow-medium-left 29s linear 0s infinite normal none running, sway-2 4s linear 0s infinite normal none running; border-radius: 23px 2px; height: 14px; left: 476.049px; margin-top: -18px; width: 14px;"></div><div class="sakura hero-effect-item petal" style="animation: fall 7.487s linear 0s 1 normal none running, blow-soft-left 29s linear 0s infinite normal none running, sway-4 2s linear 0s infinite normal none running; border-radius: 16px 2px; height: 10px; left: -3.8688px; margin-top: -28px; width: 9px;"></div><div class="sakura hero-effect-item petal" style="animation: fall 5.487s linear 0s 1 normal none running, blow-medium-left 23s linear 0s infinite normal none running, sway-1 2s linear 0s infinite normal none running; border-radius: 17px 1px; height: 10px; left: 626.741px; margin-top: -20px; width: 10px;"></div><div class="sakura hero-effect-item petal" style="animation: fall 9.487s linear 0s 1 normal none running, blow-medium-right 20s linear 0s infinite normal none running, sway-8 3s linear 0s infinite normal none running; border-radius: 15px 2px; height: 12px; left: 157.694px; margin-top: -32px; width: 12px;"></div></div>  
+		<!--sakura effect-->
+		<div id="hero-effect" class="hero-effect" data-jackrose-effect="petal" style="overflow-x: hidden;"><div class="sakura hero-effect-item petal" style="animation: fall 9.487s linear 0s 1 normal none running, blow-soft-left 21s linear 0s infinite normal none running, sway-6 3s linear 0s infinite normal none running; border-radius: 21px 2px; height: 10px; left: 408.368px; margin-top: -31px; width: 9px;"></div><div class="sakura hero-effect-item petal" style="animation: fall 7.487s linear 0s 1 normal none running, blow-medium-right 12s linear 0s infinite normal none running, sway-7 3s linear 0s infinite normal none running; border-radius: 21px 2px; height: 13px; left: 201.618px; margin-top: -28px; width: 12px;"></div><div class="sakura hero-effect-item petal" style="animation: fall 6.487s linear 0s 1 normal none running, blow-soft-left 25s linear 0s infinite normal none running, sway-0 2s linear 0s infinite normal none running; border-radius: 21px 1px; height: 13px; left: 196.391px; margin-top: -30px; width: 12px;"></div><div class="sakura hero-effect-item petal" style="animation: fall 9.487s linear 0s 1 normal none running, blow-medium-left 19s linear 0s infinite normal none running, sway-6 3s linear 0s infinite normal none running; border-radius: 17px 1px; height: 9px; left: 546.708px; margin-top: -16px; width: 9px;"></div><div class="sakura hero-effect-item petal" style="animation: fall 6.487s linear 0s 1 normal none running, blow-medium-left 24s linear 0s infinite normal none running, sway-7 3s linear 0s infinite normal none running; border-radius: 15px 1px; height: 14px; left: 681.129px; margin-top: -23px; width: 14px;"></div><div class="sakura hero-effect-item petal" style="animation: fall 7.487s linear 0s 1 normal none running, blow-soft-right 16s linear 0s infinite normal none running, sway-3 4s linear 0s infinite normal none running; border-radius: 22px 1px; height: 11px; left: 223.941px; margin-top: -18px; width: 10px;"></div><div class="sakura hero-effect-item petal" style="animation: fall 8.487s linear 0s 1 normal none running, blow-soft-left 13s linear 0s infinite normal none running, sway-1 2s linear 0s infinite normal none running; border-radius: 21px 1px; height: 11px; left: 540.9px; margin-top: -17px; width: 11px;"></div><div class="sakura hero-effect-item petal" style="animation: fall 7.487s linear 0s 1 normal none running, blow-medium-right 13s linear 0s infinite normal none running, sway-5 3s linear 0s infinite normal none running; border-radius: 14px 1px; height: 10px; left: 489.072px; margin-top: -32px; width: 8px;"></div><div class="sakura hero-effect-item petal" style="animation: fall 6.487s linear 0s 1 normal none running, blow-medium-left 11s linear 0s infinite normal none running, sway-6 3s linear 0s infinite normal none running; border-radius: 20px 1px; height: 14px; left: 649.551px; margin-top: -27px; width: 12px;"></div><div class="sakura hero-effect-item petal" style="animation: fall 6.487s linear 0s 1 normal none running, blow-soft-right 25s linear 0s infinite normal none running, sway-5 3s linear 0s infinite normal none running; border-radius: 15px 2px; height: 9px; left: 265.369px; margin-top: -32px; width: 8px;"></div><div class="sakura hero-effect-item petal" style="animation: fall 7.487s linear 0s 1 normal none running, blow-soft-right 19s linear 0s infinite normal none running, sway-1 4s linear 0s infinite normal none running; border-radius: 18px 1px; height: 9px; left: 681.536px; margin-top: -28px; width: 7px;"></div><div class="sakura hero-effect-item petal" style="animation: fall 6.487s linear 0s 1 normal none running, blow-soft-right 25s linear 0s infinite normal none running, sway-3 2s linear 0s infinite normal none running; border-radius: 14px 2px; height: 13px; left: 354.96px; margin-top: -29px; width: 12px;"></div><div class="sakura hero-effect-item petal" style="animation: fall 5.487s linear 0s 1 normal none running, blow-medium-right 27s linear 0s infinite normal none running, sway-6 2s linear 0s infinite normal none running; border-radius: 16px 2px; height: 10px; left: 345.765px; margin-top: -24px; width: 8px;"></div><div class="sakura hero-effect-item petal" style="animation: fall 5.487s linear 0s 1 normal none running, blow-soft-left 16s 10near 0s infinite normal none running, sway-5 4s linear 0s infinite normal none running; border-radius: 17px 1px; height: 10px; left: 640.944px; margin-top: -25px; width: 8px;"></div><div class="sakura hero-effect-item petal" style="animation: fall 4.487s linear 0s 1 normal none running, blow-medium-left 29s linear 0s infinite normal none running, sway-2 4s linear 0s infinite normal none running; border-radius: 23px 2px; height: 14px; left: 476.049px; margin-top: -18px; width: 14px;"></div><div class="sakura hero-effect-item petal" style="animation: fall 7.487s linear 0s 1 normal none running, blow-soft-left 29s linear 0s infinite normal none running, sway-4 2s linear 0s infinite normal none running; border-radius: 16px 2px; height: 10px; left: -3.8688px; margin-top: -28px; width: 9px;"></div><div class="sakura hero-effect-item petal" style="animation: fall 5.487s linear 0s 1 normal none running, blow-medium-left 23s linear 0s infinite normal none running, sway-1 2s linear 0s infinite normal none running; border-radius: 17px 1px; height: 10px; left: 626.741px; margin-top: -20px; width: 10px;"></div><div class="sakura hero-effect-item petal" style="animation: fall 9.487s linear 0s 1 normal none running, blow-medium-right 20s linear 0s infinite normal none running, sway-8 3s linear 0s infinite normal none running; border-radius: 15px 2px; height: 12px; left: 157.694px; margin-top: -32px; width: 12px;"></div></div>  
 
-	<div id="fullscreen-header" class="home-header" >
-		<div class="header-container"></div>
-	</div>
-
-	<div id="hero-logo" class="hero-logo" style="opacity: 1;">
-		<div class="wrapper">
-			<div class="hero-logo-image">
-				<img width="400" height="400" src="/pictures/home/logo.jpg" class="attachment-full size-full" alt="Daniel &amp; Loan" srcset="/pictures/home/hero-logo.png 400w, /pictures/home/hero-logo-150x150.png 150w, /pictures/home/hero-logo-300x300.png 300w" sizes="(max-width: 400px) 100vw, 400px">
-			</div>
-			<div class="enter-action"> 
-				<a href="#intro" class="enter-button anchor-link">
-					<span>Enter Site</span>
-					<i class="fa fa-angle-double-down"></i>
-				</a>
+		<div id="fullscreen-header">
+			<div id="hero-logo" class="hero-logo" style="opacity: 1;">
+				<div class="hero-logo-image">
+					<img src="/pictures/home/hero-logo.png">
+				</div>
+				<div class="enter-action"> 
+					<a href="#intro" class="enter-button anchor-link">
+						<span>Enter Site</span>
+						<i class="fa fa-angle-double-down"></i>
+					</a>
+				</div>
 			</div>
 		</div>
-	</div>
-
-	<!--Navigation bar-->
+		<!--Navigation bar-->
 		<nav class="navbar" id="navbar">
 			<div class="navbar-header">
 				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -56,109 +52,100 @@
 			<div class="collapse navbar-collapse">
 				<ul class="nav navbar-nav navbar-center">
 					<li class="nav-item">
-						<img src="/pictures/home/header-logo.png" width="50" height="50">
+						<img src="/pictures/home/header-logo.png">
 					</li>
 					<li class="nav-item">
-						<a id="nav-home" href="#">HOME</a>
+						<a id="nav-home" href="www.danielandloan.com">HOME</a>
 					</li>
 					<li class="nav-item">
-						<a id="nav-groom-bride" href="#">GROOM & BRIDE</a>
+						<a id="nav-groom-bride" href="#intro">GROOM & BRIDE</a>
 					</li>
 					<li class="nav-item">
-						<a id="nav-event" href="#">EVENT</a>
+						<a id="nav-event" href="#intro">EVENT</a>
 					</li>
 					<li class="nav-item">
-						<a id="nav-gallery" href="#">GALLERY</a>
+						<a id="nav-gallery" href="#intro">GALLERY</a>
 					</li>
 				</ul>	
 			</div>
 		</nav> <!--End navigation bar -->
-<div class="intro" id="intro">
-		<div id="intro-container">
-			<div id="pic-container">
-				<img class="circle" src="/pictures/home/brideAvatar.png">
-				<span><h4>DANIEL NGUYEN</h4></span>
-			</div>
-			
-			<div id="pic-container">
-				<img class="circle" src="/pictures/home/and-symbol.png">
-			</div>
-			
-			<div id="pic-container">
-				<img class="circle" src="/pictures/home/brideAvatar.png">
-				<span><h4>LOAN NGUYEN</h4></span>
-			</div>
-		</div>			
-</div>
-
-
-	<!--Event counter timer-->
-	<div id= "content" class="content">
-		
-		<div class="wrapper wrapper-center">
-			<div id="section-heading">
-				<h2>Are getting married</h2>
-			</div>
-			<div id="subsection-heading">
-				<h5>on April 14, 2019 - San Jose, California<h5>
-			</div>
-			<div class="count-down-clock" id="clock-div">
-				<div>
-					<span class="days"></span>
-					<div class="time-text">Days</div>
-				</div>
-				<div>
-					<span class="hours"></span>
-					<div class="time-text">Hours</div>
-				</div>
-				<div>
-					<span class="minutes"></span>
-					<div class="time-text">Minutes</div>
-				</div>
-				<div>
-					<span class="seconds"></span>
-					<div class="time-text">Seconds</div>
-				</div>	
-			</div>
-		</div>
-		
-	</div>
-	<div class="intro-detail">
-		<div class="intro-text-container">
-				<div class="title">
-					<h3>Groom</h3>
-					<img src="/pictures/home/and-symbol.png">
-					<h3>Bride</h3>
-				</div>
-			<div class="row">
-				<div class="col-sm-6">
-					<img src="/pictures/home/groom-bride.jpg">
-				</div>
-				<div class="col-sm-6">
-					<h5 class="heading-text">DANIEL NGUYEN</h5>
-					<span><p>Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum.</p></span>
+		<div class="wrapper-container">	
+			<div class="intro" id="intro">
+				<div id="intro-container">
+					<div id="pic-container">
+						<img class="circle" src="/pictures/home/groom-avatar.png">
+						<span><h4>DANIEL NGUYEN</h4></span>
+					</div>
+					<div id="pic-container" class="pic-and">
+						<img class="circle" src="/pictures/home/and-symbol.png">
+					</div>
+					<div id="pic-container">
+						<img class="circle" src="/pictures/home/brideAvatar.png">
+						<span><h4>LOAN NGUYEN</h4></span>
+					</div>
 				</div>
 			</div>
-			<div class="row">
-				<div class="col-sm-6">
-					<h5 class="heading-text">LOAN NGUYEN</h5>
-					<span><p>Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum.</p></span>
+			<!--Event counter timer-->
+			<div id= "content-detail" class="content-detail">
+				<div class="container-center">
+					<div id="section-heading">
+						<h2>Are getting married</h2>
+					</div>
+					<div id="subsection-heading">
+						<h5>on April 14, 2019 - San Jose, California</h5>
+					</div>
+					<div class="count-down-clock" id="clock-div">
+						<div>
+							<span class="days"></span>
+							<div class="time-text">Days</div>
+						</div>
+						<div>
+							<span class="hours"></span>
+							<div class="time-text">Hours</div>
+						</div>
+						<div>
+							<span class="minutes"></span>
+							<div class="time-text">Minutes</div>
+						</div>
+						<div>
+							<span class="seconds"></span>
+							<div class="time-text">Seconds</div>
+						</div>	
+					</div>
 				</div>
-				<div class="col-sm-6">
-					<img src="/pictures/home/groom-bride.jpg">
+			</div>
+			<!--Intro detail-->
+			<div class="intro-detail">
+				<div class="intro-text-container">
+					<div class="title">
+						<h3>Groom</h3>
+						<img src="/pictures/home/and-symbol.png">
+						<h3>Bride</h3>
+					</div>
+					<div class="grid-container">	
+						<div class="daniel-block daniel-photo"></div>
+						<div class="daniel-block daniel-intro">
+							<h5 class="heading-text">DANIEL NGUYEN</h5>
+							<span><p>Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum.</p></span>
+						</div>
+					</div>
+					<div class="grid-container">	
+						<div class="loan-block loan-intro">
+							<h5 class="heading-text">LOAN NGUYEN</h5>
+							<span><p>Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum.</p></span>
+						</div>
+						<div class="col-sm-6">
+							<div class="loan-block loan-photo"></div>
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>
-	</div>
-
-	<div class="event">
-		<div class="event-container">
-			<div class="row">
+		<div class="event">
+			<div class="event-container">
 				<div class="title">
 					<h3>When</h3><span><img src="/pictures/home/and-symbol.png"></span><h3>Where</h3>
 				</div>
-			</div>
-			<div class="row">
 				<div class="col-sm-6 event-col">
 					<div class="col-container">
 						<img src="/pictures/home/ceremony-logo.jpg">
@@ -168,11 +155,10 @@
 						<div class="space"></div>
 						<h5 class="heading-text">WEDDING CEREMONY</h5>
 						<div id="ceremony-detail">	
-							<p>Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum.</p>
-							<strong><p>10:00 AM on Saturday, April 13, 2018<br>Home, San Jose</p></strong>
+							<p>Our ceremony is at Groom and Bridge's house. We will have a tea party with our family which is the offical engagement party. This will be an event to remember.</p>
+							<strong><p>10:00 AM on Saturday - April 13, 2018<br>Home, San Jose</p></strong>
 						</div>
 					</div>
-					
 				</div>
 				<div class="col-sm-6 event-col">
 					<div class="col-container">
@@ -183,28 +169,67 @@
 						<div class="space"></div>
 						<h5 class="heading-text">WEDDING PARTY</h5>
 						<div id="party-detail">	
-							<p>Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum.</p>
-							<strong><p>18:00 PM on Sunday, April 14, 2018<br>Wedgewood Boulder Ridge, San Jose</p></strong>
+							<p>Our reception will be fun and fabulus! Please join us and celerate our new life together. There will be dancing, dinning, drinks, live entertainment, and good times for all. </p>
+							<strong><p>18:00 PM on Sunday - April 14, 2018<br>Wedgewood BoulderRidge, San Jose</p></strong>
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>
 	</div>
-
-	<div class="map" id="map">
-		<div>
-			
+	<div class="map" id="map"></div>
+	<!-- Reserve Section---->
+	<div id="formBlock">
+		<div class="wrap" role="document">
+					<div class="blank-wrapper">
+					<form class="contact-form">
+						<div class="title-RSVP">Will You Attend?</div>
+						<div class="title-RSVP-2">Please fill in your info below</div>
+						<div class="row"> 
+							<div class="col-xs-6">
+								<span>First Name
+									<span class="red">*</span>
+									<span><input type="text" id="firstname" name="firstname"></span>
+								</span>			
+							</div>
+							<div class="col-xs-6">
+								<span>Last Name
+									<span class="red">*</span>
+									<span><input type="text" id="lastname" name="lastname"></span>
+								</span>
+							</div>	
+						</div>
+						<p>Email Address
+							<span class="red">*</span><br>
+							<span><input type="email" id="email" name="_replyto"></span>
+						</p>	
+						<p>Will you attend?
+							<br>
+							<span><input type="radio" id="yes" name="yes"> Yes, I will be there.</span>
+							<br>
+							<span><input type="radio" id="no" name="no"> Sorry, I can't come.</span>
+						</p>	
+						<p><strong>Notes</strong>
+							<span class="red">*</span><br>
+							<span><textarea class="message" id="message" cols="40" rows="10"></textarea></span>
+						</p>
+						<input type="text" name="_gotcha" style="display:none"/>
+						<input type="hidden" name="_format" value="plain" />
+						<button type="submit" class="submit" id="sumbit_id">Sign your RSVP</button>
+						<button type="reset" class="reset" id="reset_id" value="Reset">Reset</button>
+					</form>
+					</div>
 		</div>
+	</div>	
+	<div id="thankyouBlock" style="margin: 200px auto; display:none">
+		<h1>Thanks for your contact information!</h1>
+		<p>I appreciate that you took the time to send me a message. Your message has been sent to the webmaster.</p>
+		<p><a href="contact.html"><h4>Back to contact form</h4></a></p>
 	</div>
+</div>
 </body>
 <footer class="footer-section">
-	<div class="wrapper">
-		<div class="footer-logo">
-			<img width="210" height="210" src="/pictures/home/hero-logo.png" srcset="/pictures/home/hero-logo.png 210w, /pictures/home/hero-logo-150x150.png 150w" sizes="(max-width: 210px) 100w, 210px">
-		</div>
-	</div>
-	<div class="wrapper-footer">
+	<div class="footer-copyright">
 		<a href="www.danielnguyen.xyz">Copyright@2018-designed by Daniel Nguyen</a>
 	</div>	
 </footer>
@@ -216,7 +241,7 @@
 	<div id="music-embed">
 		<iframe width="100%" height="170" scrolling="no" allow="autoplay" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/134815445&amp;color=b4d2c8&amp;auto_play=true&amp;hide_related=true&amp;show_comments=false&amp;show_user=true&amp;show_reposts=false"></iframe>
 	</div>
-	
+
 </div>
 
 <!--<script src="/js/skills.js"></script>-->
@@ -256,9 +281,9 @@
 
 				sizeFullHeight();
 				window.onresize = sizeFullHeight;
-</script>
-<!--Counter timer-->
-<script type="text/javascript">
+			</script>
+			<!--Counter timer-->
+			<script type="text/javascript">
 				function getTimeRemaining(endtime) {
 					var now = new Date().getTime();
 					var t = endtime - now;
@@ -301,62 +326,137 @@
 
 				var deadline = new Date("April 14, 2019 17:00:00").getTime();
 				initializeClock('clock-div', deadline);
-</script> 
+			</script> 
 			
-<!--sakura effec-->
-<script src="/js/jquery-sakura.min.js"></script>
-<script>
+			<!--sakura effec-->
+			<script src="/js/jquery-sakura.min.js"></script>
+			<script>
     // domReady
     $(function() {
     	$('body').sakura();
     });
 
     // windowLoad
-    $(window).load(function() {
+    $(window).on('load',(function() {
     	$('body').sakura();
-    });
+    }));
 </script> 
 
 <!--Sticky Navigation bar-->
 <script type="text/javascript">
-	// When the user scrolls the page, execute myFunction 
-	window.onscroll = function() {myFunction()};
+	
 
 	// Get the navbar
-	var navbar = document.getElementById("navigation-bar");
+	var navbar = document.getElementById('navbar');
 
 	// Get the offset position of the navbar
 	var sticky = navbar.offsetTop;
 
+	// When the user scrolls the page, execute myFunction 
+	window.onscroll = function() {myFunction()};
 	// Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
 	function myFunction() {
-	  if (window.pageYOffset >= sticky) {
-	    navbar.classList.add("sticky")
-	  } else {
-	    navbar.classList.remove("sticky");
-	  }
+		if (window.pageYOffset >= sticky) {
+			navbar.classList.add("sticky")
+		} else {
+			navbar.classList.remove("sticky");
+		}
 	}
 </script>
 <script>
 // Initialize and add the map
 function initMap() {
-  // The location of san jose
-  var sanjose = {lat: 37.3329447, lng: -121.8951667};
-  var center = {lat: 37.2948056, lng: -121.874272};
-  var restaurant = {lat: 37.233644, lng: -121.8591517}
-  var marker = new google.maps.Marker({position: sanjose, map: map}); 
-  var marker2 = new google.maps.Marker({position: restaurant, map: map});
-  var map = new google.maps.Map(
-      document.getElementById('map'), {zoom: 13, center: center});
-}
+  	// The location of san jose
+  	var sanjose = {lat: 37.3329447, lng: -121.8951667};
+  	var restaurant = {lat: 37.233644, lng: -121.8591517};
+  	var centerMap = {lat: 37.2948056, lng: -121.874272};
+  	var map = new google.maps.Map(
+  		document.getElementById('map'), {zoom: 10, center: centerMap});
+  	var marker = new google.maps.Marker({
+  		position: sanjose, 
+  		map: map, 
+  		icon: "/pictures/home/home-marker.png",
+  		title: 'Ceremony'
+  	}); 
+  	var marker2 = new google.maps.Marker({
+  		position: restaurant, 
+  		map: map, 
+  		icon: "/pictures/home/restaurant-marker.png",
+  		title: 'Reception Venue'
+  	});
+  }
 </script>
 <script async defer
-	src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAzYhdKQwHyNO76zgV5RaXit5a4Tre-COc&callback=initMap">
+src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAzYhdKQwHyNO76zgV5RaXit5a4Tre-COc&callback=initMap">
 </script>
+<!-----RSVP Form Section----->
+<script type="text/javascript">
+	$(document).ready(function() {
+
+		$('.contact-form').on('submit', function(e) {
+			e.preventDefault();
+
+		        //get the name field value
+		        var fname = $('#firstname').val();
+		        var lname = $('#lastname').val();
+		        //get the name field value
+		        var email = $('#email').val();
+		        //get attent option
+		        var yes = $('#yes').val();
+		        var no = $('#no').val();
+		        //get the messages
+		        var messages = $('#message').val();
+
+		        //pretend we don't need validation
+		        if(fname == ""){
+		        	alert("Please enter first name!");
+		        	return false;
+		        }
+		        if(lname == ""){
+		        	alert("Please enter last name!");
+		        	return false;
+		        }
+		        if(email == ""){
+		        	alert("Please enter your email!");
+		        	return false;
+		        }
+		        if(messages == ""){
+		        	alert("Please enter your messages!");
+		        	return false;
+		        }
+		        else{
+		        	 //send to formspree
+		        	 $.ajax({
+		        	 	url:'https://formspree.io/danieltn91@gmail.com',
+		        	 	method:'POST',
+		        	 	data:{
+		        	 		firstname:fname,
+		        	 		lastname:lname,
+		        	 		yes:yes,
+		        	 		no:no,
+		        	 		_replyto:email,
+		        	 		email:email,
+		        	 		messages:messages,
+		        	 		_subject:'My Form Submission from www.danielandloan.com',
+		        	 	},
+		        	 	dataType:"json",
+		        	 	success:function() {
+		        	 		console.log('success'); 
+		        	 		$('#formBlock').hide();
+		        	 		$('footer').hide();
+		        	 		$('#thankyouBlock').show();
+		        	 	}   
+		        	 });  
+		        	 return true;
+		        	}
+		        });
+	}); 
+</script>
+<!-----Music Section----->
 <script>
 	var count = 1;
 	function playMusic(){
-		 
+
 		if(count == 1){
 			document.getElementById("music-embed").style.visible = "visible";
 			document.getElementById("music-embed").style.opacity = 1;
@@ -367,8 +467,7 @@ function initMap() {
 			document.getElementById("music-embed").style.visible = "hidden";
 			document.getElementById("music-embed").style.opacity = 0;
 			count = 1;
-		}
-		
+		}		
 	}
-</script>
+</script> 
 </html>
