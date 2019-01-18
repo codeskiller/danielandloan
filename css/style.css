@@ -108,7 +108,6 @@ element.style {
     text-align: center;
 }
 a {
-    text-decoration: none;
     transition: all .25s ease-in-out;
 }
 @keyframes moving {
@@ -135,7 +134,7 @@ a {
     position: relative;
 }
 
-.enter-button .fa {
+.enter-action .fa {
     display: block;
     margin-top: 5px;
     font-size: 20px;
@@ -143,21 +142,16 @@ a {
 }
 
 /*----------------Navigation bar--------------*/
-.navbar{
+#navbar{
   overflow: hidden;
   background-color: #DDF9D3;
-  border-bottom-width: 10px;
-  border-color: grey;
-}
-.navbar span {
-  background: black;
 }
 .nav-item img {
   width: 50px;
   height: 50px;
 }
 #navbar>div>ul>li{
-  padding: 25px 0;
+  padding: 20px 0;
   margin: 0 1.5em;
   float: left;
 }
@@ -166,7 +160,7 @@ a {
   display: block;
   color: #D1D19E;
   text-align: center;
-  padding: 5px 5px;
+  padding: 14px 16px;
   text-decoration: none;
   font-size: 17px;
 }
@@ -194,8 +188,8 @@ a:-webkit-any-link {
   width: 100%;
 }
 
-.sticky + .intro {
-  padding-top: 40px;
+.sticky + .wrapper-container {
+  padding-top: 60px;
 }
 
 /*---------------Header navigation---------------*/
@@ -470,18 +464,70 @@ textarea{
   background-position: bottom;
   background-repeat: no-repeat;
   background-size: cover;
-  position: center;
   display: block;
   width: 100%;
+  position: relative;
 }
 .footer-copyright{
+    background: linear-gradient(to bottom, rgba(255,255,255,0.5) 0%, white);
+    opacity: 0.5;
+    filter: alpha(opacity=50);
+}
+    
+.footer-copyright{
+  height: 5%;
+  width: 100%;
   text-align: center;
+  bottom: 0;
+  position: absolute;
 }
 .footer-copyright a{ 
-  color: white;
+  color: black;
+  font-weight: bold;
 }
 
+/*-----------------Gallery Section ----------------------*/
+.gallery{
+  margin-bottom: 50px;
+}
+#button-center{
+  text-align: center;
+}
+#button-center button{
+  border-bottom: 2px solid transparent;
+ display: inline-block;
+ color: #888;
+ margin: 0.25em 1em;
+ font-style: italic;
+ letter-spacing: 0.1em;
+ font-size: 12px;
+ background-color: transparent;
+ text-transform: uppercase;
+}
+#button-center button.active{
+  border-color: #888;
+}
+ #pre-wedding, #general{
+  float: left;
+}
+.gallery #pic-container{
+  border-color: green;
+}
+.gallery img {
+  border: 1px solid #ddd; /* Gray border */
+  border-radius: 4px;  /* Rounded border */
+  padding: 5px; /* Some padding */
+  width: 250px; /* Set a small width */
+}
+
+/* Add a hover effect (blue shadow) */
+.gallery img:hover {
+  box-shadow: 0 0 5px 5px rgba(0, 255, 0, 0.2);
+  -webkit-transform: scale(1.3);
+  transform: scale(1.3);
+}
 /*-----------------Background Music Section--------------*/
+
 .background-music-section{
   right: auto;
   left: 10px;
