@@ -9,6 +9,7 @@ body {
   color: #67727A;
   font-family: sans-serif;
   margin: 0;
+  overflow-x: visible;
 }
 h3 {
   padding-top: 2%;
@@ -30,6 +31,9 @@ element.style {
 }
 .blank-wrapper {
   padding: 50px;
+}
+.row{
+  padding: 10px;
 }
 /*------------Top Header----------------*/
 
@@ -143,55 +147,51 @@ a {
 
 /*----------------Navigation bar--------------*/
 #navbar{
-  overflow: hidden;
-  background-color: #DDF9D3;
+  background-color: #e6fff3;
+  width: 100%;
+  height: 60px;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
 }
 .nav-item img {
   width: 50px;
   height: 50px;
 }
 #navbar>div>ul>li{
-  padding: 20px 0;
+  padding: 10px 0;
   margin: 0 1.5em;
   float: left;
 }
 #navbar a {
   float: left;
   display: block;
-  color: #D1D19E;
+  color: gray;
   text-align: center;
-  padding: 14px 16px;
+  padding: 10px 16px;
   text-decoration: none;
   font-size: 17px;
+  background-color: transparent;
 }
 
 #navbar a:hover {
-  background-color: #ddd;
   color: black;
 }
 
 #navbar a.active {
-  background-color: #4CAF50;
+  border-color: #888;
   color: white;
 }
 a:-webkit-any-link {
-    color: -webkit-link;
     cursor: pointer;
 }
 .content {
   padding: 16px;
 }
 
-.sticky {
-  position: fixed;
-  top: 0;
-  width: 100%;
+.sticky-top {
+  position: sticky;
 }
-
-.sticky + .wrapper-container {
-  padding-top: 60px;
-}
-
 /*---------------Header navigation---------------*/
 .header-anchor {
     height: 50px;
@@ -247,19 +247,19 @@ a:-webkit-any-link {
 #clock-div > div{
   padding: 10px;
   border-radius: 3px;
-  background: #00BF96;
+  background: #b3ffda;
   display: inline-block;
 }
 #clock-div{
   padding: 10px;
   border-radius: 5px;
-  background-color: #00BF96;
+  background-color: #b3ffda;
   display: inline-block;
 }
 #clock-div div > span{
   padding: 15px;
   border-radius: 3px;
-  background: #00816A;
+  background: #00994f;
   display: inline-block;
 }
 
@@ -343,6 +343,7 @@ a:-webkit-any-link {
   left: 50%;
   margin-left: -30px;
   margin-bottom: 0;
+  z-index: 0;
 }
 #center-icon{
   border-radius: 10%;
@@ -417,44 +418,32 @@ input:focus, textarea:focus{
 background-color: lightyellow;
 }
 textarea{
-  width: 95% !important;
+  width: 95%;
   margin-top: 10px;
+  margin-bottom: 10px;
   min-height: 170px;
   border-radius: 5px;
   border-color: #DDF9D3;
   background-color: #DDF9D3;
 }
-.submit{
+.reset, .btn-submit{
   box-shadow: none;
-  background-color: #27a2db;
   color: #fff !important;
   font-size: 14px;
   line-height: 14px;
   max-width: 200px;
   border-radius: 5px;
   padding: 10px 50px;
-
 }
 .reset{
-  box-shadow: none;
   background-color: #FF6347;
-  color: #fff !important;
-  font-size: 14px;
-  line-height: 14px;
-  max-width: 200px;
-  border-radius: 5px;
-  padding: 10px 50px;
-
 }
-.back{
-  box-shadow: none;
-  background-color: #27a2db;
-  color: #fff !important;
-  font-size: 14px;
-  line-height: 14px;
-  max-width: 200px;
-  border-radius: 5px;
-  padding: 10px 50px;
+.btn-submit{
+  background-color: #00994f;
+}
+.form-input{
+  margin-bottom: 0.5em;
+  padding-bottom: 10px;
 }
 /*-----------------Footer section ----------------*/
 .footer-section{
@@ -544,7 +533,7 @@ textarea{
   position: absolute;
   text-align: center;
   color: white;
-  background-color: #b4d2c8;
+  background-color: #b3ffda;
 }
 #music-embed{
   width: 300px;
