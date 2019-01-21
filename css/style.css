@@ -147,7 +147,7 @@ a {
 
 /*----------------Navigation bar--------------*/
 #navbar{
-  background-color: #e6fff3;
+  background-color: #f6f4f2;
   width: 100%;
   height: 60px;
   position: -webkit-sticky;
@@ -247,19 +247,19 @@ a:-webkit-any-link {
 #clock-div > div{
   padding: 10px;
   border-radius: 3px;
-  background: #b3ffda;
+  background: #F8C8BC;
   display: inline-block;
 }
 #clock-div{
   padding: 10px;
   border-radius: 5px;
-  background-color: #b3ffda;
+  background-color: #F8C8BC;
   display: inline-block;
 }
 #clock-div div > span{
   padding: 15px;
   border-radius: 3px;
-  background: #00994f;
+  background: #F38063;
   display: inline-block;
 }
 
@@ -368,8 +368,6 @@ a:-webkit-any-link {
 }
 
 /*-----------------RSVP form section--------------*/
-
-
 .wrap{
   background-image: url(/pictures/home/background-party.jpg);
   background-repeat: no-repeat;
@@ -537,7 +535,7 @@ textarea{
 }
 #music-embed{
   width: 300px;
-  right: auto;
+  right: 10px;
   left: 0px;
   bottom: 50px;
   opacity: 0;
